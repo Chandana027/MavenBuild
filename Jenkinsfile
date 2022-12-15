@@ -19,7 +19,7 @@ node('') {
 		archiveArtifacts artifacts: 'target/*.war'
 	}
 	
-	stage ('Deployment'){
+	/*stage ('Deployment'){
 		ansiblePlaybook colorized: true, disableHostKeyChecking: true, playbook: 'deploy.yml'
 	}
 	
@@ -29,5 +29,5 @@ node('') {
 		      body: "Jenkins Pipeline Job for Maven Build got completed !!!",
 		      to: "build-alerts@example.com"
 		    )
-	}
+	}*/
 }
